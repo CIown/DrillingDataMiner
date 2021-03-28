@@ -21,8 +21,8 @@ public class WellHeaderOverviewController {
     @Autowired
     IWellHeaderOverviewService service;
 
-    @GetMapping("/list")
-    public ResponseEntity list() {
+    @GetMapping("/all")
+    public ResponseEntity all() {
         List entities = service.list();
         return DDMResponse.success(entities);
     }

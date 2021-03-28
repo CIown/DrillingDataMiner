@@ -23,8 +23,8 @@ public class WellHeaderController {
     @Autowired
     private IWellHeaderService service;
 
-    @GetMapping("/list")
-    public ResponseEntity list() {
+    @GetMapping("/all")
+    public ResponseEntity all() {
         List entities = service.list();
         return DDMResponse.success(entities);
     }
