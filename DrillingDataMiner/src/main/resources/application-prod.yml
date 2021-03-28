@@ -1,0 +1,35 @@
+debug: false
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      maxActive: 300
+      initialSize: 2
+      minIdle: 2
+      maxWait: 60000
+      url: jdbc:postgresql://pgm-bp194l1g8x45zv8214830.pg.rds.aliyuncs.com:1433/visualization-core?currentSchema=visualization_core&autocommit=false
+      username: dbadmin
+      password: HUbY@R432uj
+      driver-class-name: org.postgresql.Driver
+      timeBetweenEvictionRunsMillis: 60000
+      minEvictableIdleTimeMillis: 30000
+      validationQuery: select 1
+      testWhileIdle: true
+      testOnBorrow: true
+      testOnReturn: false
+      poolPreparedStatements: false
+      maxPoolPreparedStatementPerConnectionSize: 0
+      filters: stat,slf4j,config
+      connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=3000
+      stat-view-servlet:
+        urlPattern: "/druid/*"
+        enabled: true
+
+mybatis-plus:
+  mapper-locations: classpath:/mybatis/mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: true
+logging:
+  level:
+    root: info
