@@ -30,8 +30,8 @@ public class DDMResponse<T> {
     }
 
     private int code;
-    private T data;
     private String message;
+    private T data;
 
     public DDMResponse(DDMResponseCode code, T data) {
         this.message = code.getMsg();

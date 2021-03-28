@@ -2,9 +2,8 @@ package com.ddm.controller;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.ddm.common.DDMResponse;
-import com.ddm.entity.WellHeaderEntity;
-import com.ddm.service.IWellHeaderService;
-import org.apache.ibatis.annotations.Param;
+import com.ddm.entity.WellHeaderOverviewEntity;
+import com.ddm.service.IWellHeaderOverviewService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,11 +16,10 @@ import java.util.List;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/wellheader")
-public class WellHeaderController {
-
+@RequestMapping("/overview")
+public class WellHeaderOverviewController {
     @Autowired
-    private IWellHeaderService service;
+    IWellHeaderOverviewService service;
 
     @GetMapping("/list")
     public ResponseEntity list() {
@@ -32,9 +30,9 @@ public class WellHeaderController {
     @GetMapping("/one")
     public ResponseEntity one(@RequestParam(value = "field_name", required = true) String fieldName,
                               @RequestParam(value = "well_name", required = true) String wellName
-                              )
+    )
     {
-        QueryWrapper<WellHeaderEntity> query = new QueryWrapper<>();
+        QueryWrapper<WellHeaderOverviewEntity> query = new QueryWrapper<>();
         Map<String, String> params = new HashMap<>();
         params.put("\"FieldName\"", fieldName);
         params.put("\"WellName\"", wellName);
