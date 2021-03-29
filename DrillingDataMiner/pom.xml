@@ -21,6 +21,7 @@
 		<fastjson.version>1.2.75</fastjson.version>
 		<druid.version>1.2.5</druid.version>
 		<mybatis-plus-boot-starter.version>3.4.2</mybatis-plus-boot-starter.version>
+		<lombok.version>1.18.16</lombok.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -56,6 +57,11 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+        </dependency>
 	</dependencies>
 
 	<repositories>
