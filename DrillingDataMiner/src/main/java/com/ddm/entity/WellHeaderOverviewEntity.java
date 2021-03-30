@@ -257,7 +257,7 @@ public class WellHeaderOverviewEntity {
     @TableField("\"MD\"")
     private float mD;
     @TableField("\"WellConstructionDuration\"")
-    private String wellConstructionDuration;
+    private float wellConstructionDuration;
     @TableField("\"DrillingDuration\"")
     private float drillingDuration;
 
@@ -1264,11 +1264,11 @@ public class WellHeaderOverviewEntity {
         this.mD = mD;
     }
 
-    public String getWellConstructionDuration() {
+    public float getWellConstructionDuration() {
         return wellConstructionDuration;
     }
 
-    public void setWellConstructionDuration(String wellConstructionDuration) {
+    public void setWellConstructionDuration(float wellConstructionDuration) {
         this.wellConstructionDuration = wellConstructionDuration;
     }
 
@@ -1280,7 +1280,7 @@ public class WellHeaderOverviewEntity {
         this.drillingDuration = drillingDuration;
     }
 
-    public WellHeaderOverviewEntity(String idwell, String agent, String area, String basin, String basinCode, String com, String country, String county, String currentWellStatus1, String currentWellStatus2, String directionsToWell, String district, String division, String dtTmAbandon, String dtTmFirstProd, String dtTmRR, String dtTmSpud, String dtTmWellClass, String dtTmWellLic, float elvCasFlange, float elvGround, float elvMudLine, float elvOrigKB, float elvTubHead, boolean environmentSensitive, float eWDist, String eWFlag, String fieldCode, String fieldName, String fieldOffice, String govAuthority, boolean hiH2S, boolean hiSITP, String iDRecElvHistory, String iDRecElvHistoryTK, String iDRecProblem, String iDRecProblemTK, String iDRecSite, String iDRecSiteTK, float latitude, String latLongDatum, String latLongSource, String lease, String leaseCode, String legalSurveyLoc, String legalSurveySubTyp, String legalSurveyTyp, String locationNote, String locationRef, boolean locationSensitive, String locationTyp, float longitude, float nSDist, String nSFlag, boolean operated, String operator, String operatorCode, String platform, boolean problemFlag, String riskClass, String slot, String stateProv, String surfaceRights, float townDist, String townFlag, String townName, String townStateProv, boolean userBoolean1, boolean userBoolean2, boolean userBoolean3, boolean userBoolean4, boolean userBoolean5, String userDtTm1, String userDtTm2, String userDtTm3, String userDtTm4, String userDtTm5, float userNum1, float userNum2, float userNum3, float userNum4, float userNum5, String userTxt1, String userTxt10, String userTxt2, String userTxt3, String userTxt4, String userTxt5, String userTxt6, String userTxt7, String userTxt8, String userTxt9, int uTMGridZone, String uTMSource, float uTMx, float uTMy, float waterDepth, String wellClass, String wellConfig, String wellIDA, String wellIDB, String wellIDC, String wellIDD, String wellIDE, String wellLicensee, String wellLicenseNo, String wellName, String wellTyp1, String wellTyp2, float workingInt, boolean sysLockMeUI, boolean sysLockChildrenUI, boolean sysLockMe, boolean sysLockChildren, String sysLockDate, String sysModDate, String sysModUser, String sysCreateDate, String sysCreateUser, String sysTag, String sysModDateDB, String sysModUserDB, String sysSecurityTyp, String sysLockDateMaster, float mD, String wellConstructionDuration, float drillingDuration) {
+    public WellHeaderOverviewEntity(String idwell, String agent, String area, String basin, String basinCode, String com, String country, String county, String currentWellStatus1, String currentWellStatus2, String directionsToWell, String district, String division, String dtTmAbandon, String dtTmFirstProd, String dtTmRR, String dtTmSpud, String dtTmWellClass, String dtTmWellLic, float elvCasFlange, float elvGround, float elvMudLine, float elvOrigKB, float elvTubHead, boolean environmentSensitive, float eWDist, String eWFlag, String fieldCode, String fieldName, String fieldOffice, String govAuthority, boolean hiH2S, boolean hiSITP, String iDRecElvHistory, String iDRecElvHistoryTK, String iDRecProblem, String iDRecProblemTK, String iDRecSite, String iDRecSiteTK, float latitude, String latLongDatum, String latLongSource, String lease, String leaseCode, String legalSurveyLoc, String legalSurveySubTyp, String legalSurveyTyp, String locationNote, String locationRef, boolean locationSensitive, String locationTyp, float longitude, float nSDist, String nSFlag, boolean operated, String operator, String operatorCode, String platform, boolean problemFlag, String riskClass, String slot, String stateProv, String surfaceRights, float townDist, String townFlag, String townName, String townStateProv, boolean userBoolean1, boolean userBoolean2, boolean userBoolean3, boolean userBoolean4, boolean userBoolean5, String userDtTm1, String userDtTm2, String userDtTm3, String userDtTm4, String userDtTm5, float userNum1, float userNum2, float userNum3, float userNum4, float userNum5, String userTxt1, String userTxt10, String userTxt2, String userTxt3, String userTxt4, String userTxt5, String userTxt6, String userTxt7, String userTxt8, String userTxt9, int uTMGridZone, String uTMSource, float uTMx, float uTMy, float waterDepth, String wellClass, String wellConfig, String wellIDA, String wellIDB, String wellIDC, String wellIDD, String wellIDE, String wellLicensee, String wellLicenseNo, String wellName, String wellTyp1, String wellTyp2, float workingInt, boolean sysLockMeUI, boolean sysLockChildrenUI, boolean sysLockMe, boolean sysLockChildren, String sysLockDate, String sysModDate, String sysModUser, String sysCreateDate, String sysCreateUser, String sysTag, String sysModDateDB, String sysModUserDB, String sysSecurityTyp, String sysLockDateMaster, float mD, float wellConstructionDuration, float drillingDuration) {
         this.idwell = idwell;
         this.agent = agent;
         this.area = area;

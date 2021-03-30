@@ -1,4 +1,4 @@
-package com.ddm.controller;
+package com.ddm.controller.well;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.ddm.common.DDMResponse;
