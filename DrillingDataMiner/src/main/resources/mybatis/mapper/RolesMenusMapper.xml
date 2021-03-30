@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ddm.mapper.RolesMenusMapper">
+    <resultMap id="detailedRolesMenus" type="com.ddm.entity.RolesMenusEntity">
+        <id property="role_id" column="ROLE_ID"/>
+        <id property="menu_id" column="MENU_ID"/>
+    </resultMap>
+</mapper>
