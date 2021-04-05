@@ -5,9 +5,10 @@ import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
 import java.time.LocalDateTime;
+import java.util.Set;
 
 @Data
-@TableName("IPA_USER")
+@TableName("SYS_USER")
 public class UserEntity {
     @TableId
     private long id;
@@ -16,11 +17,12 @@ public class UserEntity {
     private boolean enabled;
     private String password;
     private String username;
-    private long dept_id;
     private String phone;
-    private long job_id;
     private LocalDateTime create_time;
     private LocalDateTime last_password_reset_time;
     private String nick_name;
     private String sex;
+    private Set<RoleEntity> roles;
+    private Set<JobEntity> jobs;
+    private DepartmentEntity dept;
 }

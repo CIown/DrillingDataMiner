@@ -7,7 +7,7 @@ import lombok.Data;
 import java.time.LocalDateTime;
 
 @Data
-@TableName("IPA_DICT")
+@TableName("SYS_DICT")
 public class StatusDictionaryEntity {
     @TableId
     private long id;

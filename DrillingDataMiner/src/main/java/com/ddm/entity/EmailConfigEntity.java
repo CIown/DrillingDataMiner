@@ -4,7 +4,7 @@ import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
-@TableName("IPA_EMAIL_CONFIG")
+@TableName("SYS_EMAIL_CONFIG")
 @Data
 public class EmailConfigEntity {
     @TableId

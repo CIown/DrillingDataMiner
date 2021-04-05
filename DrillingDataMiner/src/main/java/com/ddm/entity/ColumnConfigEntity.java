@@ -5,7 +5,7 @@ import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
 @Data
-@TableName("IPA_COLUMN_CONFIG")
+@TableName("SYS_COLUMN_CONFIG")
 public class ColumnConfigEntity {
     @TableId
     private long id;

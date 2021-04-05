@@ -8,7 +8,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Data
-@TableName("IPA_PICTURE")
+@TableName("SYS_PICTURE")
 public class PictureEntity {
     @TableId
     private long id;

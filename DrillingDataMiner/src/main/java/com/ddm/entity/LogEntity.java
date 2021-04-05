@@ -7,7 +7,7 @@ import lombok.Data;
 import java.time.LocalDateTime;
 
 @Data
-@TableName("IPA_LOG")
+@TableName("SYS_LOG")
 public class LogEntity {
     @TableId
     private long id;

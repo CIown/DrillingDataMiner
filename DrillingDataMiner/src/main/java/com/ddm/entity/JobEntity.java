@@ -7,7 +7,7 @@ import lombok.Data;
 import java.time.LocalDateTime;
 
 @Data
-@TableName("IPA_JOB")
+@TableName("SYS_JOB")
 public class JobEntity {
     @TableId
     private long id;

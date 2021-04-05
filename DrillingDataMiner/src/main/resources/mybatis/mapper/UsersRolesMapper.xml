@@ -7,4 +7,13 @@
         <id property="role_id" column="ROLE_ID"/>
         <id property="user_id" column="USER_ID"/>
     </resultMap>
+    <resultMap id="detailedRoles" type="com.ddm.entity.RoleEntity">
+        <id property="id" column="ID"/>
+        <result property="name" column="NAME"/>
+        <result property="remark" column="REMARK"/>
+        <result property="data_scope" column="DATA_SCOPE"/>
+        <result property="level" column="LEVEL"/>
+        <result property="create_time" column="CREATE_TIME"/>
+        <result property="permission" column="PERMISSION"/>
+    </resultMap>
 </mapper>

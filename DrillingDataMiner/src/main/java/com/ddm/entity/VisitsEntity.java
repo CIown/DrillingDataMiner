@@ -7,7 +7,7 @@ import lombok.Data;
 import java.time.LocalDateTime;
 
 @Data
-@TableName("IPA_VISITS")
+@TableName("SYS_VISITS")
 public class VisitsEntity {
     @TableId
     private long id;

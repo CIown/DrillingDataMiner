@@ -1,6 +1,5 @@
 package com.ddm.controller.system.schedule;
 
-import com.ddm.DevSupportApplication;
 import com.ddm.common.DDMResponse;
 import com.ddm.entity.QuartzLogEntity;
 import com.ddm.service.IQuartzLogService;

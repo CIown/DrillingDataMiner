@@ -7,7 +7,7 @@ import lombok.Data;
 import java.time.LocalDateTime;
 
 @Data
-@TableName("IPA_VERIFICATION_CODE")
+@TableName("SYS_VERIFICATION_CODE")
 public class VerificationCodeEntity {
     @TableId
     private long id;

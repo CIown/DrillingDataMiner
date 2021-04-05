@@ -1,27 +1,49 @@
 package com.ddm.entity;
 
+import com.alibaba.fastjson.annotation.JSONField;
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
 import java.time.LocalDateTime;
+import java.util.Set;
 
 @Data
-@TableName("IPA_MENU")
+@TableName("SYS_MENU")
 public class MenuEntity {
     @TableId
-    private long id;
-    private boolean i_frame;
-    private String name;
+    private Long id;
+
+    @JSONField(serialize = false)
+    private Set<RoleEntity> roles;
+
+    private String title;
+
+    @TableField("name")
+    private String componentName;
+
+    @TableField("sort")
+    private Integer menuSort = 999;
+
     private String component;
-    private long pid;
-    private long sort;
-    private String icon;
+
     private String path;
-    private boolean cache;
-    private boolean hidden;
-    private String component_name;
-    private LocalDateTime create_time;
+
+    private Integer type;
+
     private String permission;
-    private int type;
+
+    private String icon;
+
+    private Boolean cache;
+
+    private Boolean hidden;
+
+    private Long pid;
+
+    private Integer subCount = 0;
+
+    @TableField("i_frame")
+    private Boolean iFrame;
 }

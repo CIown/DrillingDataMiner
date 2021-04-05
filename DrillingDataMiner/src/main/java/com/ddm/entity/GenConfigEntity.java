@@ -5,7 +5,7 @@ import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
 @Data
-@TableName("IPA_GEN_CONFIG")
+@TableName("SYS_GEN_CONFIG")
 public class GenConfigEntity {
     @TableId
     private long id;

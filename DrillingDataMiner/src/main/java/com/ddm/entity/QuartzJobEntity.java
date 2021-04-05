@@ -7,7 +7,7 @@ import lombok.Data;
 import java.time.LocalDateTime;
 
 @Data
-@TableName("IPA_QUARTZ_JOB")
+@TableName("SYS_QUARTZ_JOB")
 public class QuartzJobEntity {
     @TableId
     private long id;

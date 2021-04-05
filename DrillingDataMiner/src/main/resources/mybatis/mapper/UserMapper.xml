@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ddm.mapper.UserMapper">
+    <resultMap id="detailedUserExt" type="com.ddm.entity.UserEntity">
+        <id property="id" column="ID"/>
+        <result property="avatar_id" column="AVATAR_ID"/>
+        <result property="email" column="EMAIL"/>
+        <result property="enabled" column="ENABLED"/>
+        <result property="password" column="PASSWORD"/>
+        <result property="username" column="USERNAME"/>
+        <result property="phone" column="PHONE"/>
+        <result property="create_time" column="CREATE_TIME"/>
+        <result property="last_password_reset_time" column="LAST_PASSWORD_RESET_TIME"/>
+        <result property="nick_name" column="NICK_NAME"/>
+        <result property="sex" column="SEX"/>
+        <association property="dept" javaType="com.ddm.entity.DepartmentEntity">
+            <id property="id" column="DEPT_ID"/>
+            <result property="name" column="DEPT_NAME"/>
+            <result property="pid" column="PID"/>
+            <result property="enabled" column="DEPT_ENABLED"/>
+            <result property="create_time" column="DEPT_CREATE_TIME"/>
+        </association>
+        <collection property="roles" ofType="com.ddm.entity.RoleEntity">
+
+            <id property="id" column="ROLE_ID"/>
+            <result property="name" column="ROLE_NAME"/>
+            <result property="remark" column="REMARK"/>
+            <result property="data_scope" column="DATA_SCOPE"/>
+            <result property="level" column="LEVEL"/>
+            <result property="create_time" column="ROLE_CREATE_TIME"/>
+            <result property="permission" column="PERMISSION"/>
+        </collection>
+        <collection property="jobs" ofType="com.ddm.entity.JobEntity">
+            <id property="id" column="JOB_ID"/>
+            <result property="name" column="JOB_NAME"/>
+            <result property="enabled" column="JOB_ENABLED"/>
+            <result property="sort" column="SORT"/>
+            <result property="dept_id" column="DEPT_ID"/>
+            <result property="create_time" column="JOB_CREATE_TIME"/>
+        </collection>
+
+    </resultMap>
+</mapper>

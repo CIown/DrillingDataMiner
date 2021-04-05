@@ -7,7 +7,7 @@ import lombok.Data;
 import java.time.LocalDateTime;
 
 @Data
-@TableName("IPA_LOCAL_STORAGE")
+@TableName("SYS_LOCAL_STORAGE")
 public class LocalStorageEntity {
     @TableId
     private long id;
