@@ -24,6 +24,6 @@ public interface RolesMenusMapper extends BaseMapper<RolesMenusEntity> {
     LinkedHashSet<MenuEntity> findByRoleIdsAndTypeNot(@Param("roleIds") Set<Long> roleIds, @Param("type") int type);
 
 
-    @Select(value = "select m2.* from role r join roles_menus rm on r.id = rm.role_id join menu m2 on rm.menu_id = m2.id where r.id = #{role_id}")
+    @Select(value = "select m2.* from sys_role r join sys_roles_menus rm on r.id = rm.role_id join sys_menu m2 on rm.menu_id = m2.id where r.id = #{role_id}")
     Set<MenuEntity> getMenus(@Param("role_id") Long role_id);
 }
