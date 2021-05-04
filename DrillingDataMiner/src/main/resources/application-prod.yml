@@ -2,15 +2,23 @@ debug: false
 spring:
   datasource:
     driverClassName: org.postgresql.Driver
-    url: jdbc:postgresql://pgm-bp194l1g8x45zv8214830.pg.rds.aliyuncs.com:1433/visualization-core?currentSchema=visualization_core&autocommit=false
-    username: dbadmin
-    password: HUbY@R432uj
+    url: jdbc:postgresql://ddm-database:5432/DDM?currentSchema=visualization_core&autocommit=false
+    username: postgres
+    password: trextrex
     hikari:
       minimum-idle: 5
       idle-timeout: 180000
       max-lifetime: 1800000
       connection-test-query: select 1
       connection-timeout: 30000
+  redis:
+    #数据库索引
+    database: ${REDIS_DB:0}
+    host: ${REDIS_HOST:ddm-redis}
+    port: ${REDIS_PORT:6379}
+    password: ${REDIS_PWD:}
+    #连接超时时间
+    timeout: 5000
 
 mybatis-plus:
   mapper-locations: classpath:/mybatis/mapper/*.xml

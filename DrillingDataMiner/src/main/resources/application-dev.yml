@@ -11,6 +11,14 @@ spring:
       max-lifetime: 1800000
       connection-test-query: select 1
       connection-timeout: 30000
+  redis:
+    #数据库索引
+    database: ${REDIS_DB:0}
+    host: ${REDIS_HOST:127.0.0.1}
+    port: ${REDIS_PORT:6379}
+    password: ${REDIS_PWD:}
+    #连接超时时间
+    timeout: 5000
 
 mybatis-plus:
   mapper-locations: classpath:/mybatis/mapper/*.xml

@@ -16,8 +16,8 @@ import java.util.List;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/overview")
-public class WellHeaderOverviewController {
+@RequestMapping("/api/StatisticsWellPosition")
+public class WellPositionController {
     @Autowired
     IWellHeaderOverviewService service;
 
