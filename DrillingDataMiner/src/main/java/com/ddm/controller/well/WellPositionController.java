@@ -1,6 +1,7 @@
 package com.ddm.controller.well;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.extension.conditions.query.QueryChainWrapper;
 import com.ddm.common.DDMResponse;
 import com.ddm.entity.WellHeaderOverviewEntity;
 import com.ddm.service.IWellHeaderOverviewService;
