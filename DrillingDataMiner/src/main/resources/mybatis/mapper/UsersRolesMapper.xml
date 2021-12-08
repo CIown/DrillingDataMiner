@@ -11,9 +11,9 @@
         <id property="id" column="ID"/>
         <result property="name" column="NAME"/>
         <result property="remark" column="REMARK"/>
-        <result property="data_scope" column="DATA_SCOPE"/>
+        <result property="dataScope" column="DATA_SCOPE"/>
         <result property="level" column="LEVEL"/>
-        <result property="create_time" column="CREATE_TIME"/>
+        <result property="createTime" column="CREATE_TIME"/>
         <result property="permission" column="PERMISSION"/>
     </resultMap>
 </mapper>

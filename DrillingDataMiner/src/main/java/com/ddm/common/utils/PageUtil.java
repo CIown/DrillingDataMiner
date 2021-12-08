@@ -15,6 +15,7 @@
  */
 package com.ddm.common.utils;
 
+import com.ddm.dto.BaseDTO;
 import org.springframework.data.domain.Page;
 
 import java.util.ArrayList;
@@ -42,6 +43,12 @@ public class PageUtil extends cn.hutool.core.util.PageUtil {
     /**
      * Page 数据处理，预防redis反序列化报错
      */
+//    public static Map<String,Object> toPage(BaseDTO dto, Integer totalElements) {
+//        Map<String,Object> map = new LinkedHashMap<>(2);
+//        map.put("content",dto);
+//        map.put("totalElements",totalElements);
+//        return map;
+//    }
     public static Map<String,Object> toPage(Page page) {
         Map<String,Object> map = new LinkedHashMap<>(2);
         map.put("content",page.getContent());

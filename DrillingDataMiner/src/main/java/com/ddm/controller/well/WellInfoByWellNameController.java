@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("api/wellInfoByWellName")
 public class WellInfoByWellNameController {
@@ -16,6 +18,7 @@ public class WellInfoByWellNameController {
 
     @GetMapping("all")
     public ResponseEntity all() {
-        return DDMResponse.success(service.list());
+        List entities = service.list();
+        return DDMResponse.success(entities);
     }
 }

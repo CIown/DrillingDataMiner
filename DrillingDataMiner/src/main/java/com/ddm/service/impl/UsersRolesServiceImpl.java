@@ -37,11 +37,13 @@ public class UsersRolesServiceImpl extends ServiceImpl<UsersRolesMapper, UsersRo
     }
 
     @Override
-    @Cacheable(key = "'auth:' + #p0.id")
+//    @Cacheable(key = "'auth:' + #p0.id")
     public List<GrantedAuthority> mapToGrantedAuthorities(UserDto user) {
         Set<String> permissions = new HashSet<>();
         // 如果是管理员直接返回
-        if (user.getIsAdmin()) {
+        System.out.println(user.getIsAdmin());
+        System.out.println("isadmin");
+        if (user.getIsAdmin() != null && user.getIsAdmin()) {
             permissions.add("admin");
             return permissions.stream().map(SimpleGrantedAuthority::new)
                     .collect(Collectors.toList());

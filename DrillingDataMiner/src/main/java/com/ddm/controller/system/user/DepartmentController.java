@@ -10,12 +10,12 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/system/dept")
+@RequestMapping("/api/dept")
 public class DepartmentController {
     @Autowired
     private IDepartmentService service;
 
-    @GetMapping("/all")
+    @GetMapping
     public ResponseEntity all() {
         return DDMResponse.success(service.list());
     }

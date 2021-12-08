@@ -15,6 +15,6 @@ import java.util.List;
 import java.util.Set;
 
 public interface IRoleService extends IService<RoleEntity> {
-
+    List<RoleSmallDto> findByUsersId(Long id);
 
 }

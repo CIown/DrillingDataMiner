@@ -5,6 +5,7 @@ import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
+import java.sql.Timestamp;
 import java.time.LocalDateTime;
 
 @Data
@@ -15,5 +16,5 @@ public class DepartmentEntity {
     private String name;
     private long pid;
     private boolean enabled;
-    private LocalDateTime create_time;
+    private Timestamp createTime;
 }

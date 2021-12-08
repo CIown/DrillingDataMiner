@@ -12,13 +12,13 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/system/job")
+@RequestMapping("/api/job")
 public class JobController {
 
     @Autowired
     private IJobService service;
 
-    @GetMapping("/all")
+    @GetMapping
     public ResponseEntity all() {
         return DDMResponse.success(service.list());
     }

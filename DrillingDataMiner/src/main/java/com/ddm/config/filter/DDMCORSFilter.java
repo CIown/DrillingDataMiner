@@ -21,14 +21,17 @@ public class DDMCORSFilter implements Filter {
 
         HttpServletRequest request = (HttpServletRequest) req;
         HttpServletResponse response = (HttpServletResponse) res;
-
         response.addHeader("Access-Control-Allow-Origin", "*");
         response.addHeader("Access-Control-Allow-Methods", "PUT, GET, POST, DELETE, OPTIONS");
         response.addHeader("Cache-Control", "no-cache");
         response.addHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization");
         response.addHeader("Access-Control-Max-AgeAccess-Control-Max-Age", "1728000");
-
+//        if ("OPTIONS".equals(request.getMethod())) {
+//            response.setStatus(HttpServletResponse.SC_OK);
+//            System.out.println("CORS");
+//        }
         chain.doFilter(request, response);
+
     }
 
     @Override

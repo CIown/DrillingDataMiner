@@ -19,4 +19,10 @@ public interface UsersRolesMapper extends BaseMapper<UsersRolesEntity> {
             "r.id = u.role_id AND u.user_id = #{id}")
     @ResultMap("detailedRoles")
     List<RoleEntity> findRoleListByUserId(@Param("id") Long id);
+
+    @Delete(value = "delete from sys_users_roles where user_id = #{id}")
+    void removeByUserIds(@Param("id") Long id);
+
+    @Update(value = "update sys_users_roles set role_id = #{usersRoles.role_id} where user_id = #{usersRoles.user_id}")
+    void updateByUserId(@Param("usersRoles") UsersRolesEntity usersRoles);
 }

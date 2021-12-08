@@ -41,4 +41,5 @@ public class WellPositionController {
 
         return DDMResponse.success(service.list(query));
     }
+
 }

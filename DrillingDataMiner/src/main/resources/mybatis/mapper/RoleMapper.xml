@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ddm.mapper.RoleMapper">
+    <resultMap id="detailedRoles" type="com.ddm.entity.RoleEntity">
+        <id property="id" column="ID"/>
+        <id property="name" column="NAME"/>
+        <id property="remark" column="REMARK"/>
+        <id property="dataScope" column="DATA_SCOPE"/>
+        <id property="level" column="LEVEL"/>
+        <id property="createTime" column="CREATE_TIME"/>
+        <id property="permission" column="PERMISSION"/>
+    </resultMap>
+</mapper>

@@ -19,6 +19,8 @@ public class WellInfoByBitEntity {
     private float szODDrill;
     @TableField("\"Make\"")
     private String make;
+    @TableField("\"Model\"")
+    private String model;
     @TableField("\"UsedClass\"")
     private String usedClass;
     @TableField("\"DepthDrilledStart\"")
@@ -35,8 +37,8 @@ public class WellInfoByBitEntity {
     private float tmDrill;
     @TableField("\"TmCirc\"")
     private float tmCirc;
-    @TableField("\"RDPInst\"")
-    private float rdpInst;
+    @TableField("\"ROPInst\"")
+    private float ropInst;
     @TableField("\"WOB\"")
     private float wOB;
     @TableField("\"RPMString\"")
@@ -61,18 +63,20 @@ public class WellInfoByBitEntity {
     private String wearOther;
     @TableField("\"WearPulled\"")
     private String wearPulled;
-    @TableField("\"Depthdrilledcalc\"")
+    @TableField("\"depthdrilledcalc\"")
     private float depthdrilledcalc;
-    @TableField("\"Ropcalc\"")
+    @TableField("\"ropcalc\"")
     private float ropcalc;
-    @TableField("\"Depthincalc\"")
+    @TableField("\"depthincalc\"")
     private float depthincalc;
-    @TableField("\"Depthoutcalc\"")
+    @TableField("\"depthoutcalc\"")
     private float depthoutcalc;
-    @TableField("\"Depthdrilledjobcalc\"")
+    @TableField("\"depthdrilledjobcalc\"")
     private float depthdrilledjobcalc;
-    @TableField("\"Tmdrilledjobcalc\"")
+    @TableField("\"tmdrilledjobcalc\"")
     private float tmdrilledjobcalc;
+    @TableField("\"FieldName\"")
+    private String fieldName;
 
 
 }

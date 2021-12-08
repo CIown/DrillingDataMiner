@@ -60,4 +60,14 @@ public class JwtUserDto implements UserDetails {
     public boolean isEnabled() {
         return user.getEnabled();
     }
+
+    @Override
+    public String toString() {
+        return "JwtUserDto{" +
+                "Roles"+getRoles()+
+                "user=" + user.toString() +
+                ", dataScopes=" + dataScopes +
+                ", authorities=" + authorities +
+                '}';
+    }
 }

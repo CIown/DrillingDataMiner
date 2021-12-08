@@ -5,6 +5,7 @@ import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
+import java.sql.Timestamp;
 import java.time.LocalDateTime;
 
 @Data
@@ -17,11 +18,11 @@ public class RoleEntity {
     @TableField("remark")
     private String remark;
     @TableField("data_scope")
-    private String data_scope;
+    private String dataScope;
     @TableField("level")
     private int level;
     @TableField("create_time")
-    private LocalDateTime create_time;
+    private Timestamp createTime;
     @TableField("permission")
     private String permission;
 }

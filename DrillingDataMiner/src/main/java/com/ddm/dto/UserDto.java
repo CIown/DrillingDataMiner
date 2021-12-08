@@ -32,7 +32,7 @@ public class UserDto extends BaseDTO implements Serializable {
 
     private String phone;
 
-    private String gender;
+    private String sex;
 
     private String avatarName;
 
@@ -47,4 +47,26 @@ public class UserDto extends BaseDTO implements Serializable {
     private Boolean isAdmin = false;
 
     private Date pwdResetTime;
+
+    @Override
+    public String toString() {
+        return "UserDto{" +
+                "id=" + id +
+                ", roles=" + roles +
+                ", jobs=" + jobs +
+                ", dept=" + dept +
+                ", deptId=" + deptId +
+                ", username='" + username + '\'' +
+                ", nickName='" + nickName + '\'' +
+                ", email='" + email + '\'' +
+                ", phone='" + phone + '\'' +
+                ", sex='" + sex + '\'' +
+                ", avatarName='" + avatarName + '\'' +
+                ", avatarPath='" + avatarPath + '\'' +
+                ", password='" + password + '\'' +
+                ", enabled=" + enabled +
+                ", isAdmin=" + isAdmin +
+                ", pwdResetTime=" + pwdResetTime +
+                '}';
+    }
 }

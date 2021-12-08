@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
+import java.sql.Timestamp;
 import java.time.LocalDateTime;
 
 @Data
@@ -14,6 +15,6 @@ public class JobEntity {
     private String name;
     private boolean enabled;
     private long sort;
-    private long dept_id;
-    private LocalDateTime create_time;
+    private long deptId;
+    private Timestamp createTime;
 }

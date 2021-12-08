@@ -12,13 +12,13 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/system/dict_detail")
+@RequestMapping("/api/dictDetail")
 public class StatusDictionaryDetailController {
 
     @Autowired
     private IStatusDictionaryDetailService service;
 
-    @GetMapping("/all")
+    @GetMapping
     public ResponseEntity all() {
         return DDMResponse.success(service.list());
     }

@@ -22,6 +22,7 @@ import com.ddm.dto.UserDto;
 import com.ddm.security.config.bean.LoginProperties;
 import com.ddm.service.*;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;

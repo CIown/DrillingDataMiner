@@ -25,10 +25,10 @@ import com.ddm.common.base.BaseMapper;
 @Mapper(componentModel = "spring",unmappedTargetPolicy = ReportingPolicy.IGNORE)
 public interface RoleSmallMapper extends BaseMapper<RoleSmallDto, RoleEntity> {
 
-    @Mapping(source = "dataScope", target = "data_scope")
+    @Mapping(source = "dataScope", target = "dataScope")
     RoleEntity toEntity(RoleSmallDto dto);
 
-    @Mapping(source = "data_scope", target = "dataScope")
+    @Mapping(source = "dataScope", target = "dataScope")
     RoleSmallDto toDto(RoleEntity entity);
 
 

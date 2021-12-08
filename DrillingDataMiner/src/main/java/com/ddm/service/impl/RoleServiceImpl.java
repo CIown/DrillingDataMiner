@@ -41,7 +41,12 @@ public class RoleServiceImpl extends ServiceImpl<RoleMapper, RoleEntity> impleme
     private final RedisUtils redisUtils;
     private final IUserService userService;
     private final UserCacheClean userCacheClean;
+    private final com.ddm.mapstruct.RoleSmallMapper roleSmallMapStruct;
 
+    public List<RoleSmallDto> findByUsersId(Long id) {
+        List<RoleEntity> roles = super.baseMapper.findRoleListByUserId(id);
+        return roleSmallMapStruct.toDto(roles);
+    }
 
 
 

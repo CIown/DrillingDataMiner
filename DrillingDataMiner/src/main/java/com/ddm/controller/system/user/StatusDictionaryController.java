@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/system/dict")
+@RequestMapping("/api/dict")
 public class StatusDictionaryController {
     @Autowired
     private IStatusDictionaryService service;
